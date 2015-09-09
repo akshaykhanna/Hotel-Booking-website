@@ -1,0 +1,46 @@
+﻿.accordion {
+    width:950px
+}
+
+.accordionheader {
+    border : 1px solid #188d37;
+    color:darkolivegreen;
+    background-color : darkseagreen;
+    font-family:Verdana;
+    font-size:16px;
+    font-weight:bold;
+    padding:9px;
+    margin-top:5px;
+    cursor:pointer;
+
+}
+
+.accordionheaderSelected {
+
+    border:1px solid #1ca017;
+    color:darkseagreen;
+    background-color:darkolivegreen;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:9px;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.accordioncontent {
+    background-color: beige;
+    border : 1px dotted #188d37;
+    border-top:none;
+    font-size:14px;
+    font-weight:bold;
+    padding:8px;
+    padding-top:10px;
+    cursor:none;
+
+
+}
+
+
+body {
+}

@@ -1,0 +1,54 @@
+﻿body {
+}
+	
+	.navbar	{
+	height: 50px;
+	
+        padding: 0;
+	margin: 0;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	border-right: 1px solid #54879d; 
+	}
+	
+	.navbar li 	{
+			height: auto;
+			width: 200px;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+			padding: 0;
+			margin: 0;
+			background-color: #366b82;
+                        }
+						
+	.navbar a	{							
+		padding: 18px 0;  
+		border-left: 1px solid #54879d;
+		border-right: 1px solid #1f5065; 
+		text-decoration: none;  /* Removes the default hyperlink styling. */
+		color: white; /* Text color is white */
+		display: block;
+		}
+    .navbar li:hover, a:hover {background-color: #54879d;}
+
+.navbar li ul 	{
+		display: none;  /* Hides the drop-down menu */
+		height: auto;									
+		margin: 0; 
+		padding: 0; 			
+		}				
+
+.navbar li:hover ul 	{
+                        display: block; 
+                        }
+.navbar li ul li {background-color: #54879d;}
+
+.navbar li ul li a 	{
+		border-left: 1px solid #1f5065; 
+		border-right: 1px solid #1f5065; 
+		border-top: 1px solid #74a3b7; 
+		border-bottom: 1px solid #1f5065; 
+		}
+				
+.navbar li ul li a:hover	{background-color: #366b82;}

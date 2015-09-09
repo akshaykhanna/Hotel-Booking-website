@@ -1,0 +1,141 @@
+﻿div.nav{
+    position: relative;
+    -webkit-perspective: initial;
+    perspective: initial;
+
+}
+
+div.nav input{
+    display: none;
+    
+}
+
+
+div.nav label.mainlabel, div.nav div.menuflip{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; /* transition speed etc */
+    left : 150px;
+    top :200px;
+}
+
+
+div.nav label.mainlabel{ /* menu anchor text style */
+    width: 200px; /* width of anchor text */
+    font: bold 20px Verdana;
+    position: relative;
+    display: block;
+    padding-left: 34px; /* add left padding to make room for icon */
+    cursor: pointer;
+}
+
+div.nav label.mainlabel:before{ /* menu anchor icon */
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    border:7px solid darkgreen;
+    -webkit-box-shadow: inset 0 0 2px gray, 0 0 5px gray;
+    box-shadow: inset 0 0 2px gray, 0 0 5px gray;
+    border-radius: 30px;
+}
+
+
+div.nav div.menuflip{ /* DIV that flips over to reveal main menu */
+    position:absolute;
+    margin:0;
+    top: 200px;
+    padding: 6px;
+    background: white;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    width: 400px;
+    border: 1px solid gray;
+    -webkit-box-shadow: 2px 2px 15px #B5B5B5;
+    box-shadow: 2px 2px 15px #B5B5B5;
+    border-radius: 50px;
+    background: #eee;
+}
+
+
+div.nav div.menuflip h4{
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 20px;
+    padding: 4px 0 0 6px;
+}
+
+
+div.nav div.menuflip ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.nav div.menuflip ul li{
+    border-bottom: 1px inset gray;
+}
+
+div.nav div.menuflip ul li:last-of-type{
+    border-bottom: none;
+}
+
+div.nav div.menuflip ul li:hover{
+    border-bottom-color: transparent;
+}
+
+
+div.nav div.menuflip ul li a{
+    display:block;
+    color: blue;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px 0 10px;
+    -webkit-transition: none;
+    transition:ease-in-out;
+}
+
+
+div.nav div.menuflip ul li a:hover{
+    background: #515151;
+    color: white;
+}
+
+
+div.nav div.menuflip label.close{ /* close button */
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    padding-top: 1px;
+    display: inline-block;
+    text-align: center;
+    line-height: 14px;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px gray;
+    width: 20px;
+    height: 20px;
+    background: black;
+    font-size: 18px;
+}
+
+div.nav input:checked ~ label.mainlabel{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+div.nav input:checked ~ div.menuflip{
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+body {
+}

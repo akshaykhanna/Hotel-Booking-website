@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalendarExtender", ".", "{346EB808-909A-438F-903C-EF1F64EA0DE1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/CalendarExtender"
+		Debug.AspNetCompiler.PhysicalPath = "..\CalendarExtender\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalendarExtender\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CalendarExtender"
+		Release.AspNetCompiler.PhysicalPath = "..\CalendarExtender\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CalendarExtender\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1674"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{346EB808-909A-438F-903C-EF1F64EA0DE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346EB808-909A-438F-903C-EF1F64EA0DE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

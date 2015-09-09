@@ -1,0 +1,86 @@
+.site-header {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	@media screen and (min-width: 240px) {
+	 	top: 0;
+	}
+	@media screen and (min-width: $break-large) {
+	 	top: 60px;
+	}
+}
+
+.main-header {
+	background: $white-color;
+	min-height: 100px; 
+	height: 100px;
+}
+
+.logo {
+	margin: 25px;
+	overflow: hidden;
+}
+
+.main-menu {
+	text-align: right;
+	float: right;
+	ul li {
+		display: inline-block;
+		float: left;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-left: 1px solid $border-color;
+		a {
+			text-transform: uppercase;
+			font-size: 14px;
+			color: $body-color;
+			line-height: 100px;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+		&.active {
+			background: $primary-color;
+
+			a {
+				color: $white-color;
+			}
+		}
+	}
+}
+
+a.toggle-menu {
+	background: $border-color;
+	color: $dark-color;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.menu-responsive {
+	background: rgba($dark-color, 0.95);
+	padding: 15px 30px;
+	display: none;
+	ul {
+		li {
+			margin: 24px 0;
+			display: block;
+			a {
+				color: $white-color;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+			&.active {
+				a {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}

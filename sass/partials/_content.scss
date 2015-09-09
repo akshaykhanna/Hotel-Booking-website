@@ -1,0 +1,449 @@
+/**
+ * Basic Content Styling
+ */
+h3.widget-title {
+	font-size: 28px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.sample-thumb {
+	overflow: hidden;
+	img {
+		width: 100%;
+	}
+}
+.page-top {
+	width: 100%;
+	height: 230px;
+	background: $border-color;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#second-page {
+	background: url(../images/banner1.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+#contact {
+	background: url(../images/banner2.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+
+
+
+/**
+ * Carousel Listing Styling
+ */
+.our-listing {
+	position: relative;
+	z-index: 98;
+	top: 0;
+	left: 0;
+	margin-top: -50px;
+	@media screen and (min-width: 240px) {
+	 	margin-top: 50px;
+	}
+	@media screen and (min-width: $break-large) {
+	 	margin-top: -50px;
+	}
+}
+.list-item {
+	overflow: hidden;
+	margin: 0 15px;
+	.list-thumb {
+		overflow: hidden;
+		.title {
+			background-color: $primary-color;
+			text-transform: uppercase;
+			font-size: 22px;
+			font-weight: 600;
+			height: 50px;
+			text-align: center;
+			h4 {
+				color: $white-color;
+				line-height: 50px;
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.list-content {
+		h5 {
+			color: $primary-color;
+			font-weight: 600;
+			font-size: 14px;
+			margin: 15px 0 5px 0;
+		}
+		span {
+			color: $secondary-color;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0 0 15px 0;
+		}
+		a.price-btn {
+			display: block;
+			background-color: $primary-color;
+			color: $white-color;
+			padding: 12px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 700;
+			margin-top: 15px;
+			&:hover {
+				background-color: darken($primary-color, 5%);
+			}
+		}
+	}
+}
+.owl-next, .owl-prev {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	background-color: $primary-color;
+	color: $white-color;
+	text-align: center;
+	line-height: 40px;
+}
+
+.owl-next {
+	right: -40px;
+	@media screen and (min-width: 240px) {
+	 	right: 15px;
+	}
+	@media screen and (min-width: 960px) {
+	 	right: 13px;
+	}
+	@media screen and (min-width: $break-large) {
+	 	right: -40;
+	}
+}
+
+.owl-prev {
+	left: -40px;
+	@media screen and (min-width: 240px) {
+	 	left: 15px;
+	}
+	@media screen and (min-width: 960px) {
+	 	left: 15px;
+	}
+	@media screen and (min-width: $break-large) {
+	 	left: -40;
+	}
+}
+
+
+
+
+
+
+
+/**
+ * Middle Content Styling
+ */
+.middle-content {
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+.widget-item {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.service-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+	.service-icon {
+		float: left;
+		margin-right: 20px;
+		background: $primary-color;
+		color: $white-color;
+		font-size: 1.5em;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		line-height: 70px;
+		border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+	}
+	.service-content {
+		overflow: hidden;
+		h4 {
+			text-transform: uppercase;
+			font-size: 22px;
+			font-weight: 300;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+h4.consult-title {
+	font-size: 18px;
+	color: $primary-color;
+	font-weight: 300;
+	margin: 20px 0 20px 0;
+}
+
+.post-small {
+	overflow: hidden;
+	margin-bottom: 30px;
+	.post-date {
+		background-color: $primary-color;
+		color: $white-color;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		float: left;
+		margin-right: 20px;
+		span {
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			&.time {
+				margin-top: 14px;
+			}
+		}
+	}
+	.post-content {
+		overflow: hidden;
+		h4 {
+			font-size: 22px;
+			text-transform: uppercase;
+			font-weight: 300;
+			a {
+				color: $dark-color;
+				&:hover {
+					color: $secondary-color;
+				}
+			}
+		}
+		span {
+			color: $primary-color;
+			font-size: 18px;
+			font-weight: 300;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+	}
+}
+
+
+
+
+
+
+/**
+ * Go to action Styling
+ */
+.go-act {
+	margin-bottom: 100px;
+}
+.act-btn {
+	background: $primary-color;
+	position: relative;
+	min-height: 120px;
+	height: 120px;
+	a.link {
+		position: absolute;
+		width: 120px;
+		height: 120px;
+		right: 0;
+		top: 0;
+		line-height: 120px;
+		text-align: center;
+		color: $white-color;
+		background: darken($primary-color, 5%);
+		font-size: 3em;
+		&:hover {
+			background: darken($primary-color, 8%);
+		}
+	}
+	.inner {
+		.price {
+			position: absolute;
+			left: 30px;
+			top: 15px;
+			width: 90px;
+			height: 90px;
+			border: 2px solid $white-color;
+			color: $white-color;
+			font-weight: 600;
+			font-size: 18px;
+			border-radius: 45px;
+			-webkit-border-radius: 45px;
+			-moz-border-radius: 45px;
+			line-height: 90px;
+			text-align: center;
+		}
+		.title {
+			overflow: hidden;
+			margin-left: 150px;
+			h2 {
+				margin-top: 30px;
+				color: $white-color;
+				font-size: 32px;
+				text-transform: uppercase;
+				font-weight: 800;
+			}
+			span {
+				font-weight: 500;
+				font-size: 18px;
+				color: $white-color;
+			}
+		}
+	}
+	@media screen and (min-width: 240px) {
+		margin-top: 30px;
+	 	.title {
+	 		display: none;
+	 	}
+	}
+	@media screen and (min-width: $tablet) {
+		margin-top: 30px;
+	 	.title {
+	 		display: block;
+	 		span {
+	 			font-size: 16px;
+	 		}
+	 	}
+	}
+	@media screen and (min-width: $break-large) {
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+/**
+ * Ticket List Styling
+ */
+.ticket-list {
+	margin-bottom: 70px;
+}
+.ticket-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+	h4 {
+		font-size: 28px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	a.ticket-btn {
+		margin-top: 25px;
+		background: $primary-color;
+		color: $white-color;
+		padding: 12px;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 14px;
+		&:hover {
+			background: darken($primary-color, 5%);
+		}
+	}
+}
+
+
+
+
+
+/**
+ * Partner List Styling
+ */
+.partner-list {
+	background: $border-color;
+	margin-bottom: 100px;
+}
+.partner-item {
+	border-left: 1px solid darken($border-color, 10%);
+	padding-left: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	&.last {
+		border-right: 1px solid darken($border-color, 10%);
+		padding-left: 0;
+	}
+	@media screen and (min-width: 240px) {
+	 	border-left: 0;
+	 	&.last {
+			border-right: 0;
+		}
+	}
+	@media screen and (min-width: $break-large) {
+	 	border-left: 1px solid darken($border-color, 10%);
+	 	&.last {
+			border-right: 1px solid darken($border-color, 10%);
+		}
+	}
+}
+
+
+
+/**
+ * Contact Page Styling
+ */
+.contact-page {
+	margin: 80px 0;
+}
+.contact-infos {
+	margin-top: 40px;
+	display: block;
+	ul li {
+		line-height: 24px;
+	}
+}
+.map-holder {
+	overflow: hidden;
+}
+.map-wrapper {
+	margin-bottom: 30px;
+}
+
+input, textarea {
+	border: 1px solid darken($border-color, 12%);
+	margin-bottom: 20px;
+}
+
+div.contact-form {
+	input, textarea {
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+	}
+	textarea {
+		min-height: 140px;
+	}
+	input.mainBtn {
+		border: 0;
+		background: $primary-color;
+		color: $white-color;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}

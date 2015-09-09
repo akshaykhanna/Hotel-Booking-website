@@ -1,0 +1,89 @@
+/**
+ * Slider Site Styling
+ */
+.flexslider {
+	position: relative;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.overlay {
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+}
+
+.flex-caption {
+	position: absolute;
+	wdith: 100%;
+	margin-left: 15px;
+	left: 0;
+	bottom: 100px;
+	background-color: $white-color;
+	padding: 30px;
+	z-index: 10;
+	text-align: center;
+	span.price {
+		background: $secondary-color;
+		color: $white-color;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 28px;
+		padding: 15px 20px;
+		display: inline-block;
+	}
+	h3.title {
+		font-size: 24px;
+		font-weight: 600;
+		margin: 30px 0 22px 0;
+	}
+	a.slider-btn {
+		background: $primary-color;
+		color: $white-color;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		padding: 12px 35px;
+		display: inline-block;
+		margin-top: 30px;
+		&:hover {
+			background: darken($primary-color, 5%);
+		}
+	}
+}
+
+
+
+
+a.flex-prev, a.flex-next {
+	width: 40px;
+	height: 60px;
+	background-color: rgba($white-color, 0.6);
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	color: $black-color;
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	&:hover {
+		background: $white-color;
+	}
+	@media screen and (min-width: 240px) {
+	 	display: none;
+	}
+	@media screen and (min-width: $break-large) {
+	 	display: block;
+	}
+}
+
+a.flex-prev {
+	left: 0;
+}
+
+a.flex-next {
+	right: 0;
+}
